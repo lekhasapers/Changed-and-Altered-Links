@@ -23,7 +23,7 @@ const changes = [
     {
         title: "Stonewall Website Changed 'LGBQ' to 'LGB'",
         agency: "National Park Service",
-        description: "The Stonewall National Monument history page was altered to remove the 'Q' (questioning) from LGBQ references.",
+        description: "The Stonewall National Monument history page was altered to remove the 'Q' from LGBQ references.",
         newsSource: {
             title: "Lawmakers Call For Restoration Of Materials Removed From Stonewall National Monument",
             outlet: "National Parks Traveler",
