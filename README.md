@@ -1,56 +1,45 @@
-# Documented Federal Website Changes 
+# Federal Website Removals Archive
 
-A verified archive tracking content removed or altered on U.S. government websites
+Tracking journalist-documented changes to U.S. government websites
 
 ## About
 
-This project documents changes to federal government websites using Internet Archive snapshots. Each documented change includes:
+This archive collects federal website changes as reported by journalists who use Internet Archive snapshots to document alterations or removals. Each entry includes:
 
-- Links to archived snapshots before and after the change
-- Timestamps showing when content was captured
-- Brief, factual descriptions of what was removed or altered
-- Agency and topic tags for easy reference
+- The news article documenting the change
+- Internet Archive snapshots showing before/after comparisons
+- Timestamps and descriptions of what was altered or removed
 
-All sources are verifiable through the [Internet Archive Wayback Machine](https://archive.org).
+All sources are verifiable through journalism and the [Internet Archive Wayback Machine](https://archive.org).
 
 ## View the Site
 
-Visit the live site: [https://lekhasapers.github.io/Changed-and-Altered-Links/](https://lekhasapers.github.io/Changed-and-Altered-Links/)
-
-## Current Documentation
-
-As of the last update, this project tracks **5 documented changes** across:
-- Department of Justice
-- Centers for Disease Control and Prevention
-- National Institute of Justice
-- Office of Justice Programs
-
-### Topics covered:
-- Infrastructure security
-- Domestic terrorism research
-- Health equity
-- LGBTQ+ youth health
-- Public health resources
+Live site: [https://lekhasapers.github.io/Changed-and-Altered-Links/](https://lekhasapers.github.io/Changed-and-Altered-Links/)
 
 ## Contributing
 
-Contributions are welcome! If you've documented a change to a federal website, please ensure your submission includes:
+Found a news article documenting a federal website change? Submit it.
 
-1. **Internet Archive links** to both "before" and "after" snapshots
-2. **Clear timestamps** for both snapshots
-3. **Brief, factual description** of the change (what was removed/altered)
-4. **Agency name** and relevant topic tags
+**Requirements:**
+1. Link to the news article reporting the change
+2. Internet Archive snapshots (before & after) with dates
+3. Brief description of what changed
 
-### How to Contribute
-
-1. Fork this repository
-2. Add your documented change to the `changes` array in `script.js`
-3. Follow the existing data structure:
+**How to submit:**
+1. Fork this repo
+2. Add to the `changes` array in `script.js`:
 ```javascript
 {
-    title: "Page or Document Title",
+    title: "Clear, descriptive title",
     agency: "Agency Name",
-    description: "Brief factual description of what changed",
+    description: "What was changed or removed",
+    newsSource: {
+        title: "Article headline",
+        outlet: "Publication name",
+        url: "https://...",
+        author: "Author name",
+        date: "Month Day, Year"
+    },
     before: {
         url: "https://web.archive.org/...",
         date: "Month Day, Year"
@@ -58,41 +47,30 @@ Contributions are welcome! If you've documented a change to a federal website, p
     after: {
         url: "https://web.archive.org/...",
         date: "Month Day, Year",
-        note: "Optional note about the change"
+        note: "Optional note"
     },
-    tags: ["Tag1", "Tag2", "Tag3"]
+    sortDate: new Date("YYYY-MM-DD")
 }
 ```
-4. Submit a pull request with a clear description
+3. Submit a pull request
 
-## Verification
+## Technical
 
-All changes documented on this site are verifiable through the Internet Archive. We encourage users to:
-- Click through to the archived snapshots
-- Verify timestamps and content
-- Report any inaccuracies
-
-## Technical Details
-
-This is a static site built with:
-- HTML5
-- CSS3 (responsive design)
-- Vanilla JavaScript
+Static site:
+- HTML5 / CSS3 / Vanilla JavaScript
 - Hosted on GitHub Pages
+- Responsive design
 
 ## License
 
-This project is released under the MIT License. The archived content belongs to the original government agencies and is in the public domain.
-
-## Contact
-
-For questions, corrections, or suggestions, please open an issue on this repository.
+MIT License. Archived government content is public domain.
 
 ## Acknowledgments
 
-- [Internet Archive](https://archive.org) for providing the Wayback Machine
-- All contributors who help document these changes
+- [Internet Archive](https://archive.org) for the Wayback Machine
+- Journalists documenting these changes
+- Contributors to this archive
 
 ---
 
-*This is a civic documentation project. All information is presented factually with verifiable sources.*
+*Civic documentation project. All claims backed by journalism and Internet Archive snapshots.*

@@ -1,183 +1,190 @@
-// Data structure for documented changes organized by category
-const changesByCategory = {
-    "Public Health": [
-        {
-            title: "Health Equity - CDC Blog Post",
-            agency: "Centers for Disease Control and Prevention",
-            description: "A CDC blog post discussing health equity and featuring imagery about equal access to healthcare was removed. The post used visual metaphors to explain health equity concepts.",
-            before: {
-                url: "https://web.archive.org/web/20250109133208/https://blogs.cdc.gov/healthequity/2014/05/30/the-image-of-equity/",
-                date: "January 9, 2025"
-            },
-            after: {
-                url: "https://web.archive.org/web/20250419102258/https://blogs.cdc.gov/healthequity/2014/05/30/the-image-of-equity/",
-                date: "April 19, 2025"
-            }
+const changes = [
+    {
+        title: "Conference Censored Gender-Neutral Bathroom Info",
+        agency: "Lunar and Planetary Science Conference",
+        description: "Gender-neutral bathroom locations were removed from the conference planning page following Trump's anti-DEI executive order.",
+        newsSource: {
+            title: "'This is censorship.' Conference requires abstracts to comply with Trump anti-DEI order",
+            outlet: "Science",
+            url: "https://www.science.org/content/article/censorship-conference-requires-abstracts-comply-trump-anti-dei-order",
+            author: "Elise Cutts",
+            date: "November 20, 2025"
         },
-        {
-            title: "LGBTQ+ Youth Health Data and Resources",
-            agency: "Centers for Disease Control and Prevention",
-            description: "CDC resources on LGBTQ+ youth health and wellbeing were removed, including a 'Dear Colleague' letter about data on the health of lesbian, gay, and bisexual youth, and a dedicated page on LGBTQ youth health issues.",
-            before: {
-                url: "https://web.archive.org/web/20161220131850/https://www.cdc.gov/nchhstp/dear_colleague/2016/dcl-081116-data-on-the-health-and-wellbeing-lgb-youth.html",
-                date: "December 20, 2016 (Dear Colleague letter)"
-            },
-            after: {
-                url: "https://web.archive.org/web/20241114084027/https://www.cdc.gov/nchhstp/dear_colleague/2016/dcl-081116-data-on-the-health-and-wellbeing-lgb-youth.html",
-                date: "November 14, 2024"
-            },
-            additionalUrls: [
-                {
-                    title: "LGBTQ Youth Health Page",
-                    description: "A dedicated CDC page on LGBTQ youth health was removed. The page provided health data, resources, and guidance for addressing health disparities among LGBTQ youth.",
-                    before: "https://web.archive.org/web/20170428005203/https://www.cdc.gov/lgbthealth/youth.htm",
-                    beforeDate: "April 28, 2017",
-                    after: "https://web.archive.org/web/20250501025155/https://www.cdc.gov/lgbthealth/youth.htm",
-                    afterDate: "May 1, 2025"
-                }
-            ]
+        before: {
+            url: "https://web.archive.org/web/20250103202037/https://www.hou.usra.edu/meetings/lpsc2025/plan/",
+            date: "January 3, 2025"
+        },
+        after: {
+            url: "https://web.archive.org/web/20250410223847/https://www.hou.usra.edu/meetings/lpsc2025/plan/",
+            date: "April 10, 2025",
+            note: "Gender-neutral bathroom locations removed"
         }
-    ],
-    "National Security": [
-        {
-            title: "NIAC Final Report - National Infrastructure Advisory Council",
-            agency: "Department of Justice",
-            description: "A 34-page National Infrastructure Advisory Council report on critical infrastructure security was removed from the DOJ website. The report provided recommendations for protecting national infrastructure systems.",
-            before: {
-                url: "https://web.archive.org/web/20250114014449/https://www.justice.gov/d9/2023-11/34%20NIAC%20Final%20Report_version%2011.1.23_FINAL.pdf",
-                date: "November 1, 2023"
-            },
-            after: {
-                url: "https://web.archive.org/web/20251011193533/https://www.justice.gov/d9/2023-11/34%20NIAC%20Final%20Report_version%2011.1.23_FINAL.pdf",
-                date: "May 30, 2025",
-                note: "Not One More Report"
-            }
+    },
+    {
+        title: "Stonewall Website Changed 'LGBQ' to 'LGB'",
+        agency: "National Park Service",
+        description: "The Stonewall National Monument history page was altered to remove the 'Q' (questioning) from LGBQ references.",
+        newsSource: {
+            title: "Lawmakers Call For Restoration Of Materials Removed From Stonewall National Monument",
+            outlet: "National Parks Traveler",
+            url: "https://www.nationalparkstraveler.org/2025/10/lawmakers-call-restoration-materials-removed-stonewall-national-monument",
+            author: "NPT Staff",
+            date: "October 18, 2025"
         },
-        {
-            title: "What NIJ Research Tells Us About Domestic Terrorism",
-            agency: "Office of Justice Programs / National Institute of Justice",
-            description: "Research and analysis on domestic terrorism was removed from the National Institute of Justice website. The original content provided evidence-based findings on domestic terrorism trends and patterns.",
-            before: {
-                url: "https://web.archive.org/web/20250911165140/https://www.ojp.gov/pdffiles1/nij/306123.pdf",
-                date: "September 11, 2025"
-            },
-            after: {
-                url: "https://web.archive.org/web/20251008021942/https://www.ojp.gov/pdffiles1/nij/306123.pdf",
-                date: "October 8, 2025"
-            }
+        before: {
+            url: "https://web.archive.org/web/20250213214903/https://www.nps.gov/ston/learn/historyculture.htm",
+            date: "February 13, 2025",
+            note: "Shows 'LGBQ'"
         },
-        {
-            title: "NIJ Domestic Terrorism Research Page",
-            agency: "National Institute of Justice",
-            description: "The entire NIJ page dedicated to domestic terrorism research was removed. The page was replaced with a redirect to the general NIJ homepage, removing access to multiple research articles and resources on domestic terrorism.",
-            before: {
-                url: "https://web.archive.org/web/20250911012550/https://nij.ojp.gov/topics/articles/what-nij-research-tells-us-about-domestic-terrorism",
-                date: "September 11, 2025"
-            },
-            after: {
-                url: "https://web.archive.org/web/20251008033532/https://nij.ojp.gov/",
-                date: "October 8, 2025",
-                note: "Page redirects to NIJ homepage"
-            }
+        after: {
+            url: "https://web.archive.org/web/20250215003430/https://www.nps.gov/ston/learn/historyculture.htm",
+            date: "February 15, 2025",
+            note: "Changed to 'LGB'"
         }
-    ]
-};
+    },
+    {
+        title: "CDC Vaccine Search Tool Quietly Turned Off",
+        agency: "Centers for Disease Control",
+        description: "The comprehensive vaccination search tool was replaced with a basic pharmacy finder, removing detailed vaccine information.",
+        newsSource: {
+            title: "CDC Quietly Turned Off Its Vaccine Search Tool. It's Not Clear When It's Coming Back.",
+            outlet: "Notus",
+            url: "https://www.notus.org/health-science/cdc-quietly-turned-off-vaccine-search-tool",
+            author: "Margaret Manto",
+            date: "November 25, 2025"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250624010930/https://www.vaccines.gov/en/",
+            date: "June 24, 2025"
+        },
+        after: {
+            url: "https://web.archive.org/web/20250626011218/https://www.vaccines.gov/en/",
+            date: "June 26, 2025",
+            note: "Replaced with pharmacy finder"
+        }
+    },
+    {
+        title: "CDC Now Questions Vaccine-Autism Science",
+        agency: "Centers for Disease Control",
+        description: "The CDC vaccine safety page was rewritten to cast doubt on the scientific consensus that vaccines don't cause autism, claiming studies haven't ruled it out and that evidence has been ignored.",
+        newsSource: {
+            title: "Wisconsin health agency says CDC linking vaccines with autism is false",
+            outlet: "Milwaukee Journal Sentinel",
+            url: "https://www.jsonline.com/story/news/health/2025/11/21/department-of-health-services-dismisses-cdc-linking-vaccines-to-autism/87400360007/",
+            author: "Natalie Eilbert",
+            date: "November 21, 2025"
+        },
+        before: {
+            url: "https://web.archive.org/web/20241229234515/https://www.cdc.gov/vaccine-safety/about/autism.html",
+            date: "December 29, 2024",
+            note: "States no link between vaccines and autism"
+        },
+        after: {
+            url: "https://web.archive.org/web/20251129161836/https://www.cdc.gov/vaccine-safety/about/autism.html",
+            date: "November 29, 2025",
+            note: "Questions the evidence, suggests link hasn't been ruled out"
+        }
+    },
+    {
+        title: "White House 'Hall of Shame' Falsely Listed Fox as 'Woke'",
+        agency: "The White House",
+        description: "The White House 'media bias' page misidentified a reporter as Fox News staff and labeled the outlet as 'woke' and 'biased' before quietly correcting it.",
+        newsSource: {
+            title: "White House's 'Hall Of Shame' For 'Woke' Media Has An Awkward Error",
+            outlet: "HuffPost",
+            url: "https://www.huffpost.com/entry/white-house-media-hall-of-shame-fox-woke_n_692db994e4b0c8c3c7ce6e19",
+            author: "HuffPost",
+            date: "November 30, 2025"
+        },
+        before: {
+            url: "https://web.archive.org/web/20251129193217/https://www.whitehouse.gov/mediabias/?query-47-page=4&cst",
+            date: "November 29, 2025",
+            note: "Fox News listed as 'woke' and 'biased'"
+        },
+        after: {
+            url: "https://web.archive.org/web/20251130023106/https://www.whitehouse.gov/mediabias/?query-47-page=4&cst",
+            date: "November 30, 2025",
+            note: "Error quietly corrected"
+        }
+    }
+];
 
-// Render changes to the page organized by category
-function renderChanges() {
-    const changesContainer = document.getElementById('changes');
+function renderChanges(filteredChanges = changes) {
+    const container = document.getElementById('changes');
+    container.innerHTML = '';
 
-    Object.keys(changesByCategory).forEach(category => {
-        // Create category header
-        const categoryHeader = document.createElement('h2');
-        categoryHeader.className = 'category-header';
-        categoryHeader.textContent = category;
-        changesContainer.appendChild(categoryHeader);
+    filteredChanges.forEach(change => {
+        const card = document.createElement('div');
+        card.className = 'change-card';
 
-        // Render all changes in this category
-        changesByCategory[category].forEach((change) => {
-            const card = document.createElement('div');
-            card.className = 'change-card';
+        card.innerHTML = `
+            <h3>${change.title}</h3>
+            <span class="agency">${change.agency}</span>
+            <div class="description">${change.description}</div>
 
-            // Build notes section
-            let notesHTML = '';
-            if (change.after.note || change.description) {
-                notesHTML = '<div class="notes">';
-                if (change.after.note) {
-                    notesHTML += `<p><strong>Note:</strong> ${change.after.note}</p>`;
-                }
-                if (change.description) {
-                    notesHTML += `<p>${change.description}</p>`;
-                }
-                notesHTML += '</div>';
-            }
-
-            card.innerHTML = `
-                <h3>${change.title}</h3>
-                <div class="agency">${change.agency}</div>
-
-                <div class="snapshots">
-                    <div class="snapshot">
-                        <h4>Before</h4>
-                        <div class="date">${change.before.date}</div>
-                        <a href="${change.before.url}" target="_blank">View Archive →</a>
-                    </div>
-                    <div class="snapshot">
-                        <h4>After</h4>
-                        <div class="date">${change.after.date}</div>
-                        <a href="${change.after.url}" target="_blank">View Archive →</a>
+            <div class="timeline-container">
+                <div class="timeline-box">
+                    <div class="source-section">
+                        <div class="source-label">Source</div>
+                        <a href="${change.newsSource.url}" target="_blank" rel="noopener" class="source-title">${change.newsSource.title}</a>
+                        <div class="source-meta">${change.newsSource.outlet} • ${change.newsSource.author} • ${change.newsSource.date}</div>
                     </div>
                 </div>
-                ${notesHTML}
-            `;
 
-            changesContainer.appendChild(card);
+                <div class="timeline-box">
+                    <div class="link-section">
+                        <div class="link-label">Before</div>
+                        <div class="link-date">${change.before.date}</div>
+                        ${change.before.note ? `<div class="link-note">${change.before.note}</div>` : ''}
+                        <a href="${change.before.url}" target="_blank" rel="noopener" class="archive-link">View Archive</a>
+                    </div>
+                </div>
 
-            // Add additional URLs if present as separate cards in the grid
-            if (change.additionalUrls && change.additionalUrls.length > 0) {
-                change.additionalUrls.forEach(addUrl => {
-                    const addCard = document.createElement('div');
-                    addCard.className = 'change-card';
+                <div class="timeline-box">
+                    <div class="link-section">
+                        <div class="link-label">After</div>
+                        <div class="link-date">${change.after.date}</div>
+                        ${change.after.note ? `<div class="link-note">${change.after.note}</div>` : ''}
+                        <a href="${change.after.url}" target="_blank" rel="noopener" class="archive-link">View Archive</a>
+                    </div>
+                </div>
+            </div>
+        `;
 
-                    let addNotesHTML = '';
-                    if (addUrl.description) {
-                        addNotesHTML = `<div class="notes"><p>${addUrl.description}</p></div>`;
-                    }
-
-                    addCard.innerHTML = `
-                        <h3>${addUrl.title}</h3>
-                        <div class="snapshots">
-                            <div class="snapshot">
-                                <h4>Before</h4>
-                                <div class="date">${addUrl.beforeDate}</div>
-                                <a href="${addUrl.before}" target="_blank">View Archive →</a>
-                            </div>
-                            <div class="snapshot">
-                                <h4>After</h4>
-                                <div class="date">${addUrl.afterDate}</div>
-                                <a href="${addUrl.after}" target="_blank">View Archive →</a>
-                            </div>
-                        </div>
-                        ${addNotesHTML}
-                    `;
-
-                    changesContainer.appendChild(addCard);
-                });
-            }
-        });
+        container.appendChild(card);
     });
 }
 
-// Set last update date
-function setLastUpdate() {
-    const lastUpdateElement = document.getElementById('lastUpdate');
-    const today = new Date();
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    lastUpdateElement.textContent = today.toLocaleDateString('en-US', options);
+function filterChanges(searchTerm) {
+    const term = searchTerm.toLowerCase();
+    const filtered = changes.filter(change => {
+        return (
+            change.title.toLowerCase().includes(term) ||
+            change.agency.toLowerCase().includes(term) ||
+            change.description.toLowerCase().includes(term) ||
+            change.newsSource.outlet.toLowerCase().includes(term)
+        );
+    });
+    renderChanges(filtered);
 }
 
-// Initialize on page load
+function setDate() {
+    const date = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    document.getElementById('footerUpdate').textContent = date;
+}
+
+function setCount() {
+    document.getElementById('changeCount').textContent = changes.length;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     renderChanges();
-    setLastUpdate();
+    setDate();
+    setCount();
+
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+        filterChanges(e.target.value);
+    });
 });
