@@ -43,7 +43,7 @@ const changes = [
         }
     },
     {
-        title: "CDC Vaccine Search Tool Quietly Turned Off",
+        title: "CDC Vaccine Search Tool Turned Off",
         agency: "Centers for Disease Control",
         description: "The comprehensive vaccination search tool was replaced with a basic pharmacy finder, removing detailed vaccine information.",
         newsSource: {
@@ -88,7 +88,7 @@ const changes = [
     {
         title: "White House 'Hall of Shame' Falsely Listed Fox as 'Woke'",
         agency: "The White House",
-        description: "The White House 'media bias' page misidentified a reporter as Fox News staff and labeled the outlet as 'woke' and 'biased' before quietly correcting it.",
+        description: "The White House 'media bias' page misidentified a reporter as Fox News staff and labeled the outlet as 'woke' and 'biased' before correcting it.",
         newsSource: {
             title: "White House's 'Hall Of Shame' For 'Woke' Media Has An Awkward Error",
             outlet: "HuffPost",
@@ -104,7 +104,7 @@ const changes = [
         after: {
             url: "https://web.archive.org/web/20251130023106/https://www.whitehouse.gov/mediabias/?query-47-page=4&cst",
             date: "November 30, 2025",
-            note: "Error quietly corrected"
+            note: "Fox News removed from list"
         }
     }
 ];
@@ -118,6 +118,7 @@ function renderChanges(filteredChanges = changes) {
         card.className = 'change-card';
 
         card.innerHTML = `
+            <div class="date-marker">${change.newsSource.date}</div>
             <h3>${change.title}</h3>
             <span class="agency">${change.agency}</span>
             <div class="description">${change.description}</div>
