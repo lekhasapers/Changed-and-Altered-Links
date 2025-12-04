@@ -1,5 +1,27 @@
 const changes = [
     {
+        title: "Missing and Murdered Indigenous Report Removed",
+        agency: "Department of Justice",
+        description: "A comprehensive report on missing and murdered Indigenous people was removed from the Department of Justice website.",
+        newsSource: {
+            title: "Did Trump's DOJ Remove Report on Missing, Murdered Indigenous People?",
+            outlet: "Snopes",
+            url: "https://www.snopes.com/fact-check/trump-missing-murdered-indigenous-report/",
+            author: "Snopes Staff",
+            date: "December 4, 2025"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250208004230/https://www.justice.gov/d9/2023-11/34%20NIAC%20Final%20Report_version%2011.1.23_FINAL.pdf",
+            date: "February 8, 2025",
+            note: "Report available"
+        },
+        after: {
+            url: "https://web.archive.org/web/20250209174003/https://www.justice.gov/d9/2023-11/34%20NIAC%20Final%20Report_version%2011.1.23_FINAL.pdf",
+            date: "February 9, 2025",
+            note: "Report removed"
+        }
+    },
+    {
         title: "Conference Censored Gender-Neutral Bathroom Info",
         agency: "Lunar and Planetary Science Conference",
         description: "Gender-neutral bathroom locations were removed from the conference planning page following Trump's anti-DEI executive order.",
