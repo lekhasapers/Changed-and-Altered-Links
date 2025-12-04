@@ -1,5 +1,27 @@
 const changes = [
     {
+        title: "CDC Vaccines.gov Website Scrubbed",
+        agency: "Centers for Disease Control",
+        description: "The CDC's vaccines.gov website had its vaccine search tool and comprehensive information removed, leaving only basic content.",
+        newsSource: {
+            title: "CDC Vaccine Search Tool No Longer Works, Vaccines.Gov Website Scrubbed",
+            outlet: "Forbes",
+            url: "https://www.forbes.com/sites/brucelee/2025/12/04/cdc-vaccine-search-tool-no-longer-works-vaccinesgov-website-scrubbed/",
+            author: "Bruce Y. Lee",
+            date: "December 4, 2025"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250624010930/https://www.vaccines.gov/en/",
+            date: "June 24, 2025",
+            note: "Full vaccine search tool available"
+        },
+        after: {
+            url: "https://www.vaccines.gov/en/",
+            date: "December 4, 2025",
+            note: "Website scrubbed of search functionality"
+        }
+    },
+    {
         title: "Missing and Murdered Indigenous Report Removed",
         agency: "Department of Justice",
         description: "A comprehensive report on missing and murdered Indigenous people was removed from the Department of Justice website.",
