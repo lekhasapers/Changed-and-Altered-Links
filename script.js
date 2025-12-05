@@ -1,5 +1,49 @@
 const changes = [
     {
+        title: "State Department Removed Passport Sex Designation Guidance",
+        agency: "Department of State",
+        description: "The State Department removed the section of its foreign affairs manual instructing officials on how to assign a person's sex marker on passports.",
+        newsSource: {
+            title: "Trump Admin Requires Proof People Were Assigned Cis at Birth to Get Passport",
+            outlet: "Snopes",
+            url: "https://www.snopes.com/news/2025/12/05/trump-passport-trans-proven-cis/",
+            author: "Snopes Staff",
+            date: "December 5, 2025"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250117092546/https://fam.state.gov/FAM/08FAM/08FAM040303.html",
+            date: "January 17, 2025",
+            note: "Sex designation guidance available"
+        },
+        after: {
+            url: "https://web.archive.org/web/20250818074728/https://fam.state.gov/FAM/08FAM/08FAM040303.html",
+            date: "August 18, 2025",
+            note: "Sex designation section removed"
+        }
+    },
+    {
+        title: "Defense.gov Redirected to WAR.gov",
+        agency: "Department of Defense",
+        description: "The Department of Defense's primary domain Defense.gov, in use since 2002 with over 120,000 archived snapshots, began redirecting to the newly activated WAR.gov domain.",
+        newsSource: {
+            title: "From Defense to War: U.S. Government Deploys Bold New WAR.gov Domain",
+            outlet: "Strategic Revenue",
+            url: "https://www.strategicrevenue.com/from-defense-to-war-us-government-deploys-bold-new-war-gov-domain/",
+            author: "Strategic Revenue",
+            date: "December 4, 2025"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250101004237/https://www.defense.gov/",
+            date: "January 1, 2025",
+            note: "Defense.gov active without redirect"
+        },
+        after: {
+            url: "https://web.archive.org/web/20251130053336/https://www.defense.gov/",
+            date: "November 30, 2025",
+            note: "Defense.gov redirects to WAR.gov"
+        }
+    },
+    {
         title: "CDC Vaccines.gov Website Scrubbed",
         agency: "Centers for Disease Control",
         description: "The CDC's vaccines.gov website had its vaccine search tool and comprehensive information removed, leaving only basic content.",
