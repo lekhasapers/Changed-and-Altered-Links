@@ -238,6 +238,25 @@ main {
     line-height: 1.4;
 }
 
+.additional-source {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e8e6e0;
+}
+
+.additional-source-link {
+    color: #222;
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.additional-source-link:hover {
+    color: #4477aa;
+}
+
 .link-section {
     display: flex;
     flex-direction: column;

@@ -1,5 +1,133 @@
 const changes = [
     {
+        title: "NASA Turned Off Space Science Data Coordinated Archive",
+        agency: "National Aeronautics and Space Administration",
+        description: "NASA's Space Science Data Coordinated Archive (NSSDC) was turned off, removing access to decades of space science data.",
+        newsSource: {
+            title: "Someone Turned Off NASA Space Science Data Coordinated Archive. Why?",
+            outlet: "NASA Watch",
+            url: "https://nasawatch.com/itweb/someone-turned-off-nasa-space-science-data-coordinated-archive-why/",
+            author: "NASA Watch",
+            date: "December 2025"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250805224225/https://nssdc.gsfc.nasa.gov/",
+            date: "August 5, 2025",
+            note: "NSSDC archive accessible"
+        },
+        after: {
+            url: "https://www.nasa.gov/nssdc/",
+            date: "December 2025",
+            note: "Archive turned off"
+        }
+    },
+    {
+        title: "EPA Erased References to Human-Caused Climate Change",
+        agency: "Environmental Protection Agency",
+        description: "The EPA removed references to human-caused climate change from its climate science website.",
+        newsSource: {
+            title: "EPA erases references to human-caused climate change from websites",
+            outlet: "E&E News",
+            url: "https://www.eenews.net/articles/epa-erases-references-to-human-caused-climate-change-from-websites/",
+            author: "E&E News",
+            date: "December 2025",
+            additionalSources: [
+                {
+                    title: "E.P.A. Erases Mention of Humans Causing Climate Change From Some Web Pages",
+                    outlet: "The New York Times",
+                    url: "https://www.nytimes.com/2025/12/09/climate/epa-website-climate-change-causes.html",
+                    author: "The New York Times"
+                },
+                {
+                    title: "EPA eliminates mention of fossil fuels in website on warming's causes. Scientists call it misleading",
+                    outlet: "AP News",
+                    url: "https://apnews.com/article/epa-climate-change-censorship-fossil-fuels-1c83071f9eea81e8e31ebad0c4444775",
+                    author: "AP News"
+                },
+                {
+                    title: "EPA eliminates mention of fossil fuels in website on warming's causes. Scientists call it misleading",
+                    outlet: "The Washington Post",
+                    url: "https://www.washingtonpost.com/business/2025/12/09/epa-climate-change-censorship-fossil-fuels/5a31aff2-d546-11f0-a93c-a869cf73ebd6_story.html",
+                    author: "The Washington Post"
+                },
+                {
+                    title: "EPA websites now downplay link between humans and climate change",
+                    outlet: "CNN",
+                    url: "https://www.cnn.com/2025/12/11/climate/epa-climate-change-webpage-changes-oil-gas-coal",
+                    author: "CNN"
+                },
+                {
+                    title: "EPA Scrubs Information About Climate Change Indicators and Impacts",
+                    outlet: "Environmental Data & Governance Initiative",
+                    url: "https://envirodatagov.org/epa-scrubs-information-about-climate-change-indicators-and-impacts/",
+                    author: "EDGI"
+                }
+            ]
+        },
+        before: {
+            url: "https://web.archive.org/web/20251008162033/https://www.epa.gov/climatechange-science/causes-climate-change",
+            date: "October 8, 2025",
+            note: "References to human-caused climate change present"
+        },
+        after: {
+            url: "https://www.epa.gov/climatechange-science/causes-climate-change",
+            date: "December 2025",
+            note: "Human-caused climate change references removed"
+        }
+    },
+    {
+        title: "Towson University Removed DEI Strategic Plan",
+        agency: "Towson University",
+        description: "Towson University removed its comprehensive diversity, equity, and inclusion strategic plan document from its website.",
+        newsSource: {
+            title: "Towson University end standalone DEI plan, denies federal pressure",
+            outlet: "Campus Reform",
+            url: "https://www.campusreform.org/article/towson-university-end-standalone-dei-plan-denies-federal-pressure/29096",
+            author: "Campus Reform",
+            date: "December 2025"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250202051515/https://www.towson.edu/inclusionequity/documents/a_more_inclusive_tu_advancing_equity_diversity_strategic_plan_20_25.pdf",
+            date: "February 2, 2025",
+            note: "DEI strategic plan available"
+        },
+        after: {
+            url: "https://www.towson.edu/inclusionequity/",
+            date: "December 2025",
+            note: "Strategic plan document removed"
+        }
+    },
+    {
+        title: "FCC Removed 'Independent Agency' from Website",
+        agency: "Federal Communications Commission",
+        description: "The FCC removed references to being an 'independent agency' from its website as Chair Brendan Carr stated the agency is not independent and defended allegiance to Trump.",
+        newsSource: {
+            title: "FCC Deletes 'Independent Agency' from Website as Carr Defends Allegiance to Trump",
+            outlet: "Ars Technica",
+            url: "https://arstechnica.com/tech-policy/2025/12/fcc-deletes-independent-agency-from-website-as-carr-defends-allegiance-to-trump/",
+            author: "Jon Brodkin",
+            date: "December 5, 2025",
+            additionalSources: [
+                {
+                    title: "FCC chair Brendan Carr says 'independent agency' is 'just a label'",
+                    outlet: "The Verge",
+                    url: "https://www.theverge.com/policy/846845/fcc-senate-commerce-oversight-hearing-brendan-carr",
+                    author: "The Verge"
+                }
+            ]
+        },
+        before: {
+            url: "https://web.archive.org/web/20251001051308/https://www.fcc.gov/about/overview",
+            date: "October 1, 2025",
+            note: "References to 'independent agency' present"
+        },
+        after: {
+            url: "https://www.fcc.gov/about-fcc/what-we-do",
+            date: "December 5, 2025",
+            note: "'Independent agency' language removed"
+        }
+    },
+    {
         title: "State Department Removed Passport Sex Designation Guidance",
         agency: "Department of State",
         description: "The State Department removed the section of its foreign affairs manual instructing officials on how to assign a person's sex marker on passports.",
@@ -156,11 +284,37 @@ const changes = [
         agency: "Centers for Disease Control",
         description: "The CDC vaccine safety page was rewritten to cast doubt on the scientific consensus that vaccines don't cause autism, claiming studies haven't ruled it out and that evidence has been ignored.",
         newsSource: {
-            title: "Wisconsin health agency says CDC linking vaccines with autism is false",
-            outlet: "Milwaukee Journal Sentinel",
-            url: "https://www.jsonline.com/story/news/health/2025/11/21/department-of-health-services-dismisses-cdc-linking-vaccines-to-autism/87400360007/",
-            author: "Natalie Eilbert",
-            date: "November 21, 2025"
+            title: "Multiple outlets reported on CDC's vaccine-autism page changes",
+            outlet: "Various",
+            url: "#",
+            author: "Multiple Authors",
+            date: "November 21-29, 2025",
+            additionalSources: [
+                {
+                    title: "Wisconsin health agency says CDC linking vaccines with autism is false",
+                    outlet: "Milwaukee Journal Sentinel",
+                    url: "https://www.jsonline.com/story/news/health/2025/11/21/department-of-health-services-dismisses-cdc-linking-vaccines-to-autism/87400360007/",
+                    author: "Natalie Eilbert"
+                },
+                {
+                    title: "CDC autism question was based on disputed study retracted for ethical violations",
+                    outlet: "Popular Science",
+                    url: "https://www.popsci.com/health/cdc-autism-question-retracted-study/",
+                    author: "Jackie Rocheleau"
+                },
+                {
+                    title: "Despite Scientific Evidence, CDC Questions Vaccine-Autism Link",
+                    outlet: "Snopes",
+                    url: "https://www.snopes.com/news/2025/11/21/cdc-vaccine-autism-link/",
+                    author: "Snopes Staff"
+                },
+                {
+                    title: "The CDC Is Now Questioning the Science on Vaccines and Autism",
+                    outlet: "WIRED",
+                    url: "https://www.wired.com/story/cdc-is-now-questioning-the-science-on-vaccines-and-autism/",
+                    author: "Dhruv Mehrotra"
+                }
+            ]
         },
         before: {
             url: "https://web.archive.org/web/20241229234515/https://www.cdc.gov/vaccine-safety/about/autism.html",
@@ -214,9 +368,15 @@ function renderChanges(filteredChanges = changes) {
             <div class="timeline-container">
                 <div class="timeline-box">
                     <div class="source-section">
-                        <div class="source-label">Source</div>
+                        <div class="source-label">Source${change.newsSource.additionalSources ? 's' : ''}</div>
                         <a href="${change.newsSource.url}" target="_blank" rel="noopener" class="source-title">${change.newsSource.title}</a>
                         <div class="source-meta">${change.newsSource.outlet} • ${change.newsSource.author} • ${change.newsSource.date}</div>
+                        ${change.newsSource.additionalSources ? change.newsSource.additionalSources.map(source => `
+                            <div class="additional-source">
+                                <a href="${source.url}" target="_blank" rel="noopener" class="additional-source-link">${source.title}</a>
+                                <div class="source-meta">${source.outlet} • ${source.author}</div>
+                            </div>
+                        `).join('') : ''}
                     </div>
                 </div>
 
