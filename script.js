@@ -1,5 +1,28 @@
 const changes = [
     {
+        title: "CIA World Factbook Shut Down After 60+ Years",
+        agency: "Central Intelligence Agency",
+        description: "The CIA shut down the World Factbook on February 4, 2026, removing the website and breaking millions of links used in educational, journalistic, and research contexts. All historical archives were eliminated.",
+        newsSource: {
+            title: "Guest Post: The World Factbook is Gone",
+            outlet: "Data Rescue Project",
+            url: "https://www.datarescueproject.org/guest-post-the-world-factbook-is-gone/",
+            author: "Christopher Steven Marcum",
+            date: "February 6, 2026"
+        },
+        before: {
+            url: "https://web.archive.org/web/20260203000000*/https://www.cia.gov/the-world-factbook/",
+            date: "February 3, 2026",
+            note: "World Factbook operational"
+        },
+        after: {
+            url: "https://www.cia.gov/the-world-factbook/",
+            date: "February 4, 2026",
+            note: "Website shut down, redirects created"
+        },
+        sortDate: new Date("2026-02-04")
+    },
+    {
         title: "NASA Turned Off Space Science Data Coordinated Archive",
         agency: "National Aeronautics and Space Administration",
         description: "NASA's Space Science Data Coordinated Archive (NSSDC) was turned off, removing access to decades of space science data.",
