@@ -1,5 +1,28 @@
 const changes = [
     {
+        title: "FDA Removed Warnings Against Ineffective Autism Treatments",
+        agency: "Food and Drug Administration",
+        description: "The FDA removed a webpage warning consumers about deceptive autism treatments including chelation, hyperbaric oxygen therapy, chlorine dioxide (a dangerous bleach), and raw camel milk.",
+        newsSource: {
+            title: "Chlorine Dioxide, Raw Camel Milk: The FDA No Longer Warns Against These and Other Ineffective Autism Treatments",
+            outlet: "ProPublica",
+            url: "https://www.propublica.org/article/rfk-jr-fda-removes-autism-treatments-warning",
+            author: "Megan O'Matz",
+            date: "February 18, 2026"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250101000000*/https://www.fda.gov/consumers/consumer-updates/beware-false-or-misleading-claims-treating-autism",
+            date: "January 1, 2025",
+            note: "Warnings about dangerous autism treatments available"
+        },
+        after: {
+            url: "https://www.fda.gov/consumers/consumer-updates/beware-false-or-misleading-claims-treating-autism",
+            date: "End of 2025",
+            note: "Warning page removed during 'routine clean up'"
+        },
+        sortDate: new Date("2025-12-31")
+    },
+    {
         title: "CIA World Factbook Shut Down After 60+ Years",
         agency: "Central Intelligence Agency",
         description: "The CIA shut down the World Factbook on February 4, 2026, removing the website and breaking millions of links used in educational, journalistic, and research contexts. All historical archives were eliminated.",
@@ -21,6 +44,37 @@ const changes = [
             note: "Website shut down, redirects created"
         },
         sortDate: new Date("2026-02-04")
+    },
+    {
+        title: "State Department Deleting All Pre-2025 X Posts",
+        agency: "Department of State",
+        description: "The State Department is removing all posts on its official X/Twitter accounts made before January 20, 2025, including posts from Trump's first term. Posts will be internally archived but require FOIA requests for public access.",
+        newsSource: {
+            title: "State Department will delete X posts from before Trump returned to office",
+            outlet: "NPR",
+            url: "https://www.npr.org/2026/02/07/nx-s1-5704785/state-department-trump-posts-x",
+            author: "Shannon Bond and Stephen Fowler",
+            date: "February 7, 2026",
+            additionalSources: [
+                {
+                    title: "State Department is deleting all X posts from before Trump's return — even from Trump's first term",
+                    outlet: "Boing Boing",
+                    url: "https://boingboing.net/2026/02/09/state-department-is-deleting-all-x-posts-from-before-trumps-return-even-from-trumps-first-term.html",
+                    author: "Boing Boing"
+                }
+            ]
+        },
+        before: {
+            url: "https://web.archive.org/web/20250115000000*/https://twitter.com/StateDept",
+            date: "January 15, 2025",
+            note: "Historical posts visible on State Department X accounts"
+        },
+        after: {
+            url: "https://twitter.com/StateDept",
+            date: "February 7, 2026",
+            note: "Pre-January 20, 2025 posts removed from public view"
+        },
+        sortDate: new Date("2026-02-07")
     },
     {
         title: "NASA Turned Off Space Science Data Coordinated Archive",
