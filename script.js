@@ -1,5 +1,51 @@
 const changes = [
     {
+        title: "360+ Federal Data Collections Removed SOGI Measures",
+        agency: "Multiple Federal Agencies",
+        description: "Approximately 360 federal data collections removed sexual orientation and gender identity measures. 83% were made through non-substantive change requests rather than formal regulatory processes.",
+        newsSource: {
+            title: "Removal of Sexual Orientation and Gender Identity from Federal Data Collections",
+            outlet: "Williams Institute at UCLA Law",
+            url: "https://williamsinstitute.law.ucla.edu/publications/sogi-data-collection-removal/",
+            author: "Lauren J.A. Bouton and Elana Redfield",
+            date: "February 2026"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250115000000*/",
+            date: "January 2025",
+            note: "SOGI data collection measures in place"
+        },
+        after: {
+            url: "#",
+            date: "January 2026",
+            note: "338 collections removed gender identity measures, 60 removed sexual orientation data"
+        },
+        sortDate: new Date("2026-01-31")
+    },
+    {
+        title: "DOJ Removed FBI Interviews with Underage Trump Accuser",
+        agency: "Department of Justice",
+        description: "A document cataloguing FBI interviews with a woman who accused Trump of sexual assault when she was underage was removed from the DOJ website, despite the Epstein Files Transparency Act requiring public release.",
+        newsSource: {
+            title: "DOJ Removed Record of Multiple FBI Interviews with Underage Trump Accuser, Epstein Data Shows",
+            outlet: "Substack",
+            url: "https://substack.com/home/post/p-188426985",
+            author: "Roger Sollenberger",
+            date: "February 18, 2026"
+        },
+        before: {
+            url: "https://web.archive.org/web/20260131000000*/https://www.justice.gov/epstein/files/DataSet%209/EFTA00095751.pdf",
+            date: "January 31, 2026",
+            note: "FBI interview records accessible"
+        },
+        after: {
+            url: "https://www.justice.gov/epstein/files/DataSet%209/EFTA00095751.pdf",
+            date: "February 18, 2026",
+            note: "Document returns 'page not found' error"
+        },
+        sortDate: new Date("2026-02-18")
+    },
+    {
         title: "FDA Removed Warnings Against Ineffective Autism Treatments",
         agency: "Food and Drug Administration",
         description: "The FDA removed a webpage warning consumers about deceptive autism treatments including chelation, hyperbaric oxygen therapy, chlorine dioxide (a dangerous bleach), and raw camel milk.",
