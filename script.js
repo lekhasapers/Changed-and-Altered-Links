@@ -31,7 +31,15 @@ const changes = [
             outlet: "Substack",
             url: "https://substack.com/home/post/p-188426985",
             author: "Roger Sollenberger",
-            date: "February 18, 2026"
+            date: "February 18, 2026",
+            additionalSources: [
+                {
+                    title: "DOJ Deleted Record Revealing That Maxwell Holds Potential Blackmail Over Trump",
+                    outlet: "Daily Kos",
+                    url: "https://www.dailykos.com/stories/2026/2/21/2369775/-DOJ-Deleted-Record-Revealing-That-Maxwell-Holds-Potential-Blackmail-Over-Trump",
+                    author: "randym77"
+                }
+            ]
         },
         before: {
             url: "https://web.archive.org/web/20260131000000*/https://www.justice.gov/epstein/files/DataSet%209/EFTA00095751.pdf",
@@ -41,7 +49,7 @@ const changes = [
         after: {
             url: "https://www.justice.gov/epstein/files/DataSet%209/EFTA00095751.pdf",
             date: "February 18, 2026",
-            note: "Document returns 'page not found' error"
+            note: "Document removed, later restored after reporting"
         },
         sortDate: new Date("2026-02-18")
     },
