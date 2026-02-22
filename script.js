@@ -1,5 +1,28 @@
 const changes = [
     {
+        title: "ICE Warrant Training Materials Scrubbed from FLETC Website",
+        agency: "Federal Law Enforcement Training Center",
+        description: "Training materials explaining differences between administrative and judicial warrants used by ICE agents were removed. The materials stated administrative warrants do not authorize forced entry, contradicting current ICE claims.",
+        newsSource: {
+            title: "ICE agent training on how to serve warrants scrubbed from federal website",
+            outlet: "The Lowell Sun",
+            url: "https://www.lowellsun.com/2026/02/22/ice-agent-training-on-how-to-serve-warrants-scrubbed-from-federal-website/",
+            author: "Peter Currier",
+            date: "February 22, 2026"
+        },
+        before: {
+            url: "https://web.archive.org/web/20060000000000*/https://www.fletc.gov/",
+            date: "2006-2009",
+            note: "Training discussion on warrant limitations available online"
+        },
+        after: {
+            url: "https://www.fletc.gov/",
+            date: "February 22, 2026",
+            note: "Materials removed for 'comprehensive review'"
+        },
+        sortDate: new Date("2026-02-22")
+    },
+    {
         title: "360+ Federal Data Collections Removed SOGI Measures",
         agency: "Multiple Federal Agencies",
         description: "Approximately 360 federal data collections removed sexual orientation and gender identity measures. 83% were made through non-substantive change requests rather than formal regulatory processes.",
