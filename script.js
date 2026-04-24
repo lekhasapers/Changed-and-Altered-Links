@@ -1,5 +1,28 @@
 const changes = [
     {
+        title: "ODNI FOIA Documents Scrubbed After Website Taken Down",
+        agency: "Office of the Director of National Intelligence",
+        description: "The ODNI took down its website under Tulsi Gabbard for unexplained reasons, and when it was restored days later, hundreds of intelligence-related FOIA documents were missing. A FOIA lawsuit by Bloomberg later produced emails shedding light on the disappearance.",
+        newsSource: {
+            title: "FOIA Documents 'Scrubbed' From Intelligence Agency Website",
+            outlet: "Bloomberg",
+            url: "https://www.bloomberg.com/news/newsletters/2026-04-24/foia-documents-scrubbed-from-intelligence-agency-website",
+            author: "Jason Leopold",
+            date: "April 24, 2026"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250504000000*/https://www.intelligence.gov/information/foia",
+            date: "May 4, 2025",
+            note: "Hundreds of FOIA documents accessible on ODNI website"
+        },
+        after: {
+            url: "https://www.intelligence.gov/information/foia",
+            date: "May 2025",
+            note: "Website restored with hundreds of FOIA documents missing"
+        },
+        sortDate: new Date("2025-05-05")
+    },
+    {
         title: "ICE Warrant Training Materials Scrubbed from FLETC Website",
         agency: "Federal Law Enforcement Training Center",
         description: "Training materials explaining differences between administrative and judicial warrants used by ICE agents were removed. The materials stated administrative warrants do not authorize forced entry, contradicting current ICE claims.",
@@ -48,7 +71,7 @@ const changes = [
     {
         title: "DOJ Removed FBI Interviews with Underage Trump Accuser",
         agency: "Department of Justice",
-        description: "A document cataloguing FBI interviews with a woman who accused Trump of sexual assault when she was underage was removed from the DOJ website, despite the Epstein Files Transparency Act requiring public release.",
+        description: "Approximately 53 pages of FBI interview documents with women who accused Trump of sexual assault when they were underage were removed or withheld from the DOJ website, despite the Epstein Files Transparency Act requiring public release.",
         newsSource: {
             title: "DOJ Removed Record of Multiple FBI Interviews with Underage Trump Accuser, Epstein Data Shows",
             outlet: "Substack",
@@ -61,6 +84,12 @@ const changes = [
                     outlet: "Daily Kos",
                     url: "https://www.dailykos.com/stories/2026/2/21/2369775/-DOJ-Deleted-Record-Revealing-That-Maxwell-Holds-Potential-Blackmail-Over-Trump",
                     author: "randym77"
+                },
+                {
+                    title: "Justice Department withheld and removed some Epstein files related to Trump",
+                    outlet: "NPR",
+                    url: "https://www.npr.org/2026/02/24/nx-s1-5723968/epstein-files-trump-accusation-maxwell",
+                    author: "Stephen Fowler"
                 }
             ]
         },
@@ -85,7 +114,15 @@ const changes = [
             outlet: "ProPublica",
             url: "https://www.propublica.org/article/rfk-jr-fda-removes-autism-treatments-warning",
             author: "Megan O'Matz",
-            date: "February 18, 2026"
+            date: "February 18, 2026",
+            additionalSources: [
+                {
+                    title: "FDA Removes Webpage Warning Against Ineffective Autism Treatments",
+                    outlet: "Undark",
+                    url: "https://undark.org/2026/02/23/fda-autism-treatment-warnings/",
+                    author: "Megan O'Matz"
+                }
+            ]
         },
         before: {
             url: "https://web.archive.org/web/20250101000000*/https://www.fda.gov/consumers/consumer-updates/beware-false-or-misleading-claims-treating-autism",
