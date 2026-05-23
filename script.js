@@ -1,5 +1,28 @@
 const changes = [
     {
+        title: "CDC Erased Mpox Safety Guidance Targeting LGBTQ+ Communities",
+        agency: "Centers for Disease Control",
+        description: "The CDC deleted a webpage providing harm-reduction guidance for LGBTQ+ communities during the mpox outbreak, including advice for Pride events and sex venues. A federal court had previously ruled similar removals likely violated the law.",
+        newsSource: {
+            title: "'This is probably illegal': CDC quietly erases mpox guidance tied to Pride events",
+            outlet: "The Advocate",
+            url: "https://www.advocate.com/health/sexual-health/cdc-mpox-information-erased",
+            author: "Christopher Wiggins",
+            date: "May 22, 2026"
+        },
+        before: {
+            url: "https://web.archive.org/web/20250101000000*/https://www.cdc.gov/poxvirus/mpox/safer-sex-social-gatherings.html",
+            date: "January 1, 2025",
+            note: "Mpox harm-reduction guidance for LGBTQ+ communities available"
+        },
+        after: {
+            url: "https://www.cdc.gov/poxvirus/mpox/safer-sex-social-gatherings.html",
+            date: "May 2026",
+            note: "Page deleted; HHS says it 'does not align with Administration priorities'"
+        },
+        sortDate: new Date("2026-05-22")
+    },
+    {
         title: "ODNI FOIA Documents Scrubbed After Website Taken Down",
         agency: "Office of the Director of National Intelligence",
         description: "The ODNI took down its website under Tulsi Gabbard for unexplained reasons, and when it was restored days later, hundreds of intelligence-related FOIA documents were missing. A FOIA lawsuit by Bloomberg later produced emails shedding light on the disappearance.",
