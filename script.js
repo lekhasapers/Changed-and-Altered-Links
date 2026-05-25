@@ -1,5 +1,42 @@
 const changes = [
     {
+        title: "DOJ Scrubbed Hundreds of January 6 Prosecution Press Releases",
+        agency: "Department of Justice",
+        description: "The DOJ removed hundreds of press releases related to January 6 Capitol riot defendants, including cases involving Proud Boys and Oath Keepers convicted of seditious conspiracy. The DOJ defended the deletions, calling the material 'partisan propaganda.'",
+        newsSource: {
+            title: "Justice Department deletes press releases on charges against Jan. 6 rioters",
+            outlet: "USA Today",
+            url: "https://www.usatoday.com/story/news/politics/2026/05/24/justice-department-january-6-capitol-riot-news-releases-info/90245830007/",
+            author: "USA Today",
+            date: "May 24, 2026",
+            additionalSources: [
+                {
+                    title: "Justice Department deletes press releases on charges against Jan. 6 rioters",
+                    outlet: "NBC News",
+                    url: "https://www.nbcnews.com/politics/justice-department/justice-department-deletes-press-releases-charges-jan-6-rioters-rcna346613",
+                    author: "NBC News"
+                },
+                {
+                    title: "'Nothing quiet about it.' DOJ scrubs its website of Jan. 6 news releases",
+                    outlet: "The Spokesman-Review",
+                    url: "https://www.spokesman.com/stories/2026/may/24/nothing-quiet-about-it-doj-scrubs-its-website-of-j/",
+                    author: "The Spokesman-Review"
+                }
+            ]
+        },
+        before: {
+            url: "https://web.archive.org/web/20250101000000*/https://www.justice.gov/usao/pressreleases",
+            date: "January 1, 2025",
+            note: "Hundreds of Jan. 6 prosecution press releases accessible"
+        },
+        after: {
+            url: "https://www.justice.gov/usao/pressreleases",
+            date: "May 23, 2026",
+            note: "Jan. 6 press releases removed; DOJ calls them 'partisan propaganda'"
+        },
+        sortDate: new Date("2026-05-23")
+    },
+    {
         title: "CDC Erased Mpox Safety Guidance Targeting LGBTQ+ Communities",
         agency: "Centers for Disease Control",
         description: "The CDC deleted a webpage providing harm-reduction guidance for LGBTQ+ communities during the mpox outbreak, including advice for Pride events and sex venues. A federal court had previously ruled similar removals likely violated the law.",
