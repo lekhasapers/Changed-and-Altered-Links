@@ -2,7 +2,7 @@ const changes = [
     {
         title: "DOJ Scrubbed Hundreds of January 6 Prosecution Press Releases",
         agency: "Department of Justice",
-        description: "The DOJ removed hundreds of press releases related to January 6 Capitol riot defendants, including cases involving Proud Boys and Oath Keepers convicted of seditious conspiracy. The DOJ defended the deletions, calling the material 'partisan propaganda.'",
+        description: "The DOJ removed approximately 6,055 pages related to January 6 Capitol riot defendants — including prosecution press releases, FBI wanted pages, and case database entries — covering cases involving Proud Boys and Oath Keepers convicted of seditious conspiracy. The DOJ called the material 'partisan propaganda.' Lawfare used AI to recover 95.3% of the deleted content from the Internet Archive.",
         newsSource: {
             title: "Justice Department deletes press releases on charges against Jan. 6 rioters",
             outlet: "USA Today",
@@ -21,6 +21,12 @@ const changes = [
                     outlet: "The Spokesman-Review",
                     url: "https://www.spokesman.com/stories/2026/may/24/nothing-quiet-about-it-doj-scrubs-its-website-of-j/",
                     author: "The Spokesman-Review"
+                },
+                {
+                    title: "The Justice Department Erases History; Lawfare Restores It",
+                    outlet: "Lawfare",
+                    url: "https://www.lawfaremedia.org/article/the-justice-department-erases-history--lawfare-restores-it",
+                    author: "Tyler McBrien, Michael Feinberg, and Benjamin Wittes"
                 }
             ]
         },
